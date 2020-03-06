@@ -1,3 +1,4 @@
+CLEARANCE_ITEM_DISCOUNT_RATE = 0.20
 
 
 def find_item_by_name_in_collection(name, collection)
