@@ -115,7 +115,7 @@ def checkout(cart, coupons)
   apply_clearance(consolidated)
   
   while index < consolidated.length do 
-    total += items_total_cost(consolidated[:index])
+    total += items_total_cost(consolidated[index])
     index += 1 
   end 
   
