@@ -38,7 +38,8 @@ end
 
 def coupon_hash(coupon)
   rounded_price = (coupon[:cost].to_f * 1.0 / coupon[:num]).round(2)
-  {:item => "#{coupon[:item]} W/ COUPON",
+  {
+  :item => "#{coupon[:item]} W/COUPON",
   :price => rounded_price,
   :count => coupon[:num]
   }
@@ -68,6 +69,7 @@ def apply_coupons(cart, coupons)
   end 
   i += 1 
 end
+
 cart 
 end 
 
